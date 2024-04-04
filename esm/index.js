@@ -23,9 +23,8 @@ const bufferPoints = stdio => {
       else if (0xe0 <= byte && byte <= 0xef) needed = 2;
       else if (0xf0 <= byte && byte <= 0xf4) needed = 3;
       if (!needed) {
-        const out = new Uint8Array(bytes.splice(0));
-        written += out.length;
-        stdio(out);
+        written += bytes.length;
+        stdio(new Uint8Array(bytes.splice(0)));
       }
     }
     return written;
