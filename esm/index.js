@@ -13,7 +13,7 @@
 const bufferPoints = stdio => {
   const acc = [];
   let needed = 0;
-  return (buffer) => {
+  return buffer => {
     let written = 0;
     for (const c of buffer) {
       acc.push(c);
