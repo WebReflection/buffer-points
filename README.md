@@ -1,5 +1,8 @@
 # buffer-points
 
+[![build status](https://github.com/WebReflection/buffer-points/actions/workflows/node.js.yml/badge.svg)](https://github.com/WebReflection/buffer-points/actions) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/buffer-points/badge.svg?branch=main)](https://coveralls.io/github/WebReflection/buffer-points?branch=main)
+
+
 A module that buffers code points before flushing these as single char.
 
 ```js
